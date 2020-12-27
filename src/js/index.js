@@ -1,23 +1,8 @@
-const arr = [23,12,121,12]
 
-let myfunc = a => {
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-    console.log(`too : ${a}`);
-}
+import Search from "./model/search";
 
-const arr2 = [...arr, 44, 1223];
-console.log(myfunc())
+// import {add, multiply as mul} from "./view/searchView";
+
+let search = new Search('pizza');
+
+search.doSearch().then(r => console.log(r));
